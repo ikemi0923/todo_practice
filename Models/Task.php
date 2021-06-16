@@ -22,11 +22,7 @@ class Task extends Model
         $stmt->execute($data);
     }
     // * update()を以下に追加する
-    public function upddate($date)
-    {
-        $stmt = $this->db_manager->dbh->prepare('UPDATE ' . $this->table . 'SET title = ?, contents = ? WHERE id = ?');
-        $stmt->execute($date);
-    }
+    
 
 
 
