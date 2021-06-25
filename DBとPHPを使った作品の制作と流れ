@@ -1,0 +1,29 @@
+DBとPHPを使った作品の制作と流れ
+- DBを作成(phpmyadmin)
+- DBとPHPを接続(dbconnect.php)
+- SQL発行・実行
+    - insert文：データを作成
+    - select文：データを取得
+    - update文：データを更新
+    - delete文：データを削除
+    - これらをまとめて　CRUD処理
+- (DB接続解除)
+
+Modelの役割
+- DBとのやりとりをする
+   - SQLの記載がある
+
+データを送信するタグ
+- formタグ
+- aタグ
+
+formタグの使い方
+- actionとmethod
+    action:送信先
+    method:方法
+
+＄_POST, $_GET
+- スーパーグローバル変数
+
+formの何タグの何属性にデータが格納されるか？
+- inputタグ(select,textarea...)のname属性

@@ -7,9 +7,30 @@
 require_once('Models/Task.php');
 require_once('function.php');
 
+// インスタンス化
 $task = new Task();
 $tasks = $task->getAll();
+
+// デバック(debug)
+// データが入っているか
+// どういう型
 // var_dump($tasks);
+
+$arr2 = [
+    ['id' => 1, 'text' => 'こんにちは1'],
+    ['id' => 2, 'text' => 'こんにちは2'],
+    ['id' => 3, 'text' => 'こんにちは3'],
+];
+
+// 連想配列
+// var_dump($arr2[0]['text']);
+
+// データの取得
+
+// 配列をループして1行ずつ取得
+foreach($tasks as $task){
+    
+}
 
 ?>
 <!DOCTYPE html>
